@@ -19,6 +19,12 @@ function convert_to_letters(numbers) {
 	return letters;
 }
 
+// The number of combinations it is supposed to find is:
+// ([ size of array for number at index 1 ] choose 1)([ size of array for number at index 2 ] choose 1) ... ([ size of array for number at index i ] choose 1) for 0 < i < inf.
+// IE. For number 929 we have
+// (4 choose 1)(3 choose 1)(4 choose 1) = 48 combinations
+// or For number 92 we have
+// (4 choose 1)(3 choose 1) = 12 combinations
 function process(phone_number) {
 	var words = [];
 	var nWords = 0;
