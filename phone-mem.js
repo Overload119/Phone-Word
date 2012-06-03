@@ -114,7 +114,7 @@ function run(event) {
 
 function output (lines) {
 	var results = document.getElementById("results");
-	results.innerHTML = lines.join(',').replace(/\,/g, '\n') + "\n\nTotal: "+lines.length;
+	results.innerHTML = lines.join(',').replace(/\,/g, '    ') + "\n\nTotal: "+lines.length;
 }
 
 function init() {
