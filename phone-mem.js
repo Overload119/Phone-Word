@@ -18,16 +18,6 @@ var NUMBER_LETTER_MAP = {
 // or For number 92 we have
 // (4 choose 1)(3 choose 1) = 12 combinations
 
-// num: is the original numbers
-// statenum: the initial state of all the numbers ie [0,0,0] for 929 would correspond to WAW
-function get_letters(num, statenum) {
-	var word = "";
-	for( var i = 0; i<num.length; i++ ){
-		word += o[ num[i] ][ statenum[i] ];
-	}
-	return word;
-}
-
 // @number (Int) -> @Array
 function process(number) {
   number = number.toString();
