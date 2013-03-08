@@ -35,7 +35,7 @@ function process(number) {
       var letterSet = array[0];
       var subset = array.slice(1);
       for(var i = 0; i < letterSet.length; i++) {
-        helper(subset, set.concat([letterSet[i]]));
+        process_helper(subset, set.concat([letterSet[i]]));
       }
     }
   }
